@@ -7,6 +7,9 @@ mps: new Decimal(0)
 tick: new Decimal(1000)
 playtime: new Decimal(0)
 }
+function click() {
+player.money+=(player.mpc)
+}
 function save() {
 	localStorage.setItem('clicktSave',btoa(JSON.stringify(player)))
 }
