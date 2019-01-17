@@ -1,15 +1,19 @@
 player = {
-  version: 0.01
-  build: 0
-  money: new Decimal(0)
-  mpc: new Decimal(1)
-  mps: new Decimal(0)
-  tick: new Decimal(1000)
+  version: 0.01,
+  build: 0,
+  money: new Decimal(0),
+  mpc: new Decimal(1),
+  mps: new Decimal(0),
+  tick: new Decimal(1000),
   playtime: new Decimal(0)
 }
 
-function click() {
-  player.money += (player.mpc)
+function getMoney() {
+  player.money = player.money.plus(player.mpc)
+}
+
+function updateElement(elm,text) {
+  document.getElementById(elm).innerHTML = text
 }
 
 function save() {
@@ -40,6 +44,7 @@ function gameTick() {
     var s = (new Date()
       .getTime() - player.time) / 1000 // number of seconds since last tick
     player.playtime += s
+    updateElement("money",formatValue(player.money))
   }
   player.time = new Date()
     .getTime()

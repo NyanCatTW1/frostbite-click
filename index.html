@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <title>clickt</title>
+      <title>Clickt</title>
       <link rel="icon" type="image/png" href="icon.jpg">
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <script src="js/break_infinity.min.js"></script>
       <script src="js/core.js"></script>
+      <script src="js/format.js"></script>
    </head>
    <body style="text-align:center" onload='gameInit()'>
       <div id="game" style='text-align:center'>
-         <div>you have <span id="money">0</span> money</div>
+         <div>You have <span id="money">0</span> money</div>
          <br>
-         <div>you gain <span id="mps">0</span> money per second</div>
+         <div>You are getting <span id="mps">0</span> money per second</div>
          <br>
-         <div>tick: <span id="tick">1000</span></div>
-         <button id="upgTick">cost: 1000 money</button><button id="buymaxTick">buy max</button>
+         <div>Tick: <span id="tick">1000</span></div>
+         <button id="upgTick">Cost: 1000 money</button><button id="buymaxTick">Buy max</button>
          <br><br>
-         <button id="money-creator" onClick="click()">click to gain <span id="mpc"></span> money</button>
+         <button id="money-creator" onclick="getMoney()">Click to gain <span id="mpc"></span> money</button>
       </div>
+  </body>
 </html>
