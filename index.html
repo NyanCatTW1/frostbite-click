@@ -1,18 +1,21 @@
-<DOCTYPE! html>
-<head>
-<title>clickt</title>
-<link rel="icon" type="image/png" href="icon.jpg"</link>
-<script type="text/javascript" src="js/break_infinity.min.js"></script>
-<script type="text/javascript" src="js/core.js"></script>
-</head>
-<body style="text-align:center" onload='gameInit()'>
-<div id="game" style='text-align:center'>
-  <div id="money">you have <span id="money">0</span> money</div>
-<br>
-  <div id="mps">you gain <span id="mps">0</span> money per second</div>
-<br>
-  <div id="tick">tick: <text id="tick">1000</text></div>
-  <button id="upgTick">cost: 1000 money</button><button id="buymaxTick">buy max</button>
-<br><br>
-<button id="money-creator" onClick="click()">click to gain <span id="mpc"></span> money</button>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>clickt</title>
+      <link rel="icon" type="image/png" href="icon.jpg">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <script src="js/break_infinity.min.js"></script>
+      <script src="js/core.js"></script>
+   </head>
+   <body style="text-align:center" onload='gameInit()'>
+      <div id="game" style='text-align:center'>
+         <div>you have <span id="money">0</span> money</div>
+         <br>
+         <div>you gain <span id="mps">0</span> money per second</div>
+         <br>
+         <div>tick: <span id="tick">1000</span></div>
+         <button id="upgTick">cost: 1000 money</button><button id="buymaxTick">buy max</button>
+         <br><br>
+         <button id="money-creator" onClick="click()">click to gain <span id="mpc"></span> money</button>
+      </div>
 </html>
